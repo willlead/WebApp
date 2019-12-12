@@ -30,15 +30,32 @@
 					<label for="weight">몸무게</label>
 					<input type="password" id="weight" />
 				</div>
-				<button>비만도 체크</button>
+				<button>
+					비만도 체크
+				</button>
 				<div data-role="fieldcontain">
-					<legend>취미선택</legend>
-					<label for="check-1">등산</label>
-					<input type="checkbox" id="check-1" />
-					<label for="check-2">독서</label>
-					<input type="checkbox" id="check-2" />
-					<label for="check-3">게임</label>
-					<input type="checkbox" id="check-3" />
+					<fieldset data-role="controlgroup">
+						<legend>
+							취미선택
+						</legend>
+						<label for="check-1">등산</label>
+						<input type="checkbox" id="check-1" name="check-1"/>
+						<label for="check-2">독서</label>
+						<input type="checkbox" id="check-2" name="check-2"/>
+						<label for="check-3">게임</label>
+						<input type="checkbox" id="check-3" name="check-3"/>
+					</fieldset>
+				</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>
+							성별
+						</legend>
+						<label for="rdo-1">남자</label>
+						<input type="radio" id="rdo-1" name="rdovalue" checked="true"/>
+						<label for="rdo-2">여자</label>
+						<input type="radio" id="rdo-2" name="rdovalue"/>
+					</fieldset>
 				</div>
 			</div>
 	</body>
