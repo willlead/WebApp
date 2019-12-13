@@ -16,10 +16,17 @@
 		<!---->
 	</head>
 	<body>
-		<!--메인페이지-->
-		<div data-role="page">
+		<!-- page id main
+			오리역 page의 home 버튼에 href="#main"을 지정해야 홈인 곳으로 온다.
+			home 버튼 위치는 class="ui-btn- left, right로 설정한다.			
+			header와 footer에는 툴바라고 얘기한다.
+			header는 왼쪽 오른쪽 2개의 툴바 버튼을 넣을 수 있다.
+			footer에는 n개의 툴바버튼이 차례대로 들어간다. -->
+		<div data-role="page" id="main">
 			<div data-role="header" data-theme="b" data-position="fixed">
+				<a href="#" data-icon="home" class="ui-btn-right">Home</a>
 				<h1>지하철 노선도</h1>
+				<a href="#" data-icon="gear" class="ui-btn-left">Setting</a>				
 			</div>
 			<div data-role="content">
 				<ul data-role="listview" data-inset="true" data-filter="true">
@@ -65,12 +72,16 @@
 				</ul>
 			</div>
 			<div data-role="footer" data-theme="b" data-position="fixed">
-				<h1>성렬이의 분당선</h1>
+				<a href="#" data-icon="plus">Add</a>
+				<a href="#" data-icon="delete">Delete</a>
+				<a href="#" data-icon="refresh">Refresh</a>
+				<a href="#" data-icon="heart">Heart</a>				
 			</div>
 		</div>
 		<!--오리역 안내 페이지-->
 		<div data-role="page" id="ori">
-			<div data-role="header" data-add-back-btn="true" >
+			<div data-role="header" >
+				<a href="#main" data-icon="home">Home</a>
 				<h1>오리역 노선안내</h1>
 			</div>
 			<div data-role="content">
