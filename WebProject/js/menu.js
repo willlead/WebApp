@@ -17,6 +17,6 @@ window.onload = function() {
 		output+="<li>아무거나</li>"
 		output +="</ul>";
 	}
-	document.body.innerHTML += output;
+	document.body.innerHTML = output;
 	
 }
