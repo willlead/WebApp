@@ -40,14 +40,33 @@
 			var result =  total> limit? (total-limit)+"원 초과": "돈관리 잘했어요!";			
 			document.write(result);*/
 			
-			/**/
+			/*
 			//2번 문제
 			var avg = (1200+1200+1300)/3;
 			var val4 = prompt("4분기 판매량은? ","0");			
 			var result = val4>=avg ? "평균이상" : "평균 미만";
 			document.write(result);
+			*/
 			
-			/**/				
+			/*
+			//var pan = prompt("판매수량은?","0");
+			//document.write(pan*2000);
+			
+			//Number는 문자를 숫자화 시킨다.
+			//ex1)
+			var pan = Number(prompt("판매수량은?","0"));
+			document.write(pan+500);			
+			//ex2)	
+			var pan2 = prompt("판매수량은?", "0");
+			document.write(Number(pan2)+500);
+			*//**//**/
+			//parseInt
+			//300개 parseInt("300개") => 300 으로 변경,
+			//parseInt("2.5"") => 2 로 변경
+			var pan3 = prompt("판매수량은?", "0");
+			var result = parseInt(pan3)+500;			
+			result+= ", value: " + pan3;			
+			document.write(result);			
 						
 		</script>
 	</head>
