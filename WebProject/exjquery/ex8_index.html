@@ -13,14 +13,35 @@
 	</style>
 	<script>
 		$(document).ready(function () {
-
+			var c = ["yellow", "orange", "blue", "green", "cyan"];
+			$("h1").css({
+				color: "red",
+				background: function (index) {
+					return c[index];
+				}
+			});
 		});
+
+
 	</script>
 </head>
 
 <body>
-	<h1>자바쿼리 시작</h1>
-
+	<h1>
+		자바스크립트
+	</h1>
+	<h1>
+		제이쿼리
+	</h1>
+	<h1>
+		하이브리드앱
+	</h1>
+	<h1>
+		아두이노
+	</h1>
+	<h1>
+		임베디드 프로그래밍
+	</h1>
 </body>
 
 </html>
